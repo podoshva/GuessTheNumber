@@ -1,0 +1,71 @@
+body {
+  font-size: 16px;
+  font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  color: rgb(230, 230, 230);
+  background-color: rgb(27, 27, 27);
+}
+
+.content {
+  zoom: 3;
+  position: relative;
+}
+
+@media (max-width: 375px) {
+  .content {
+    zoom: 2;
+  }
+}
+
+.attempts {
+  position: absolute;
+  right: 0px;
+  margin-top: 7px;
+  font-size: 15px;
+}
+
+input {
+  width: 150px;
+  border: solid 1px;
+  outline: none;
+  border: none;
+}
+
+#enter {
+  background-color: rgb(71, 71, 236);
+}
+
+#enter,
+#again-button {
+  padding: 8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+#enter:hover,
+#again-button:hover {
+  opacity: 0.8;
+}
+
+#enter:active,
+#again-button:active {
+  opacity: 0.6;
+}
+
+#prompts,
+.button-block {
+  margin-top: 10px;
+}
+
+#prompts {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#again-button {
+  background-color: rgb(40, 158, 29);
+}
