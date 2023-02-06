@@ -8,13 +8,18 @@ body {
 }
 
 .content {
-  zoom: 3;
   position: relative;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 1400px) {
   .content {
-    zoom: 1;
+    zoom: 3;
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    zoom: 2;
   }
 }
 
